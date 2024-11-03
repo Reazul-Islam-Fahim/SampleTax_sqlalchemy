@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import oracledb
 
-SQLALCHEMY_DATABASE_URL = f"oracle+oracledb://fahim:123@192.168.2.106:1521/XEPDB1"
+SQLALCHEMY_DATABASE_URL = f"oracle+oracledb://FAHIM:123@FAYSALDB"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
